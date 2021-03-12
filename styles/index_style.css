@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
+/* переменные */
+:root {
+  --black: #2e2d4d;
+  --white: #e4e3d3;
+  --green: #337357;
+}
+
+body {
+  background-color: var(--black);
+}
+
+/* Вверхная навигационная панель */
+.header {
+  display: flex;
+  background-color: var(--green);
+  border-radius: 20px;
+  margin: 21px 141px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+li {
+  background-color: var(--white);
+  padding: 10px;
+  margin: 25px 48px;
+  border-radius: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Comfortaa";
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  padding: 17px 20px;
+}
