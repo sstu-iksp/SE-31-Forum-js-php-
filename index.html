@@ -20,21 +20,27 @@
         </nav>
     </header>
     <!--  навигация в тикетах -->
-    <section>
+    <section class="search">
         <div>
-            <input type="text">
+            <input type="text" placeholder="Поиск..." id="search_input">
         </div>
         <div>
-            <input type="text">
+            <select id="select">
+                <option>#theme</option>
+                <option>#theme</option>
+                <option>#theme</option>
+                <option>#theme</option>
+                <option>#theme</option>
+            </select>
         </div>
         <div>
-            <button type="button">Добавить ticket</button>
+            <button type="button" id="ticket_btn">Добавить ticket</button>
         </div>
     </section>
     <!-- Основное наполнение -->
     <main>
-        <section>
-            <div>
+        <section class="ticket_wrapper">
+            <div class="ticket">
                 <h2>Title</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa excepturi vitae ipsum libero non. Voluptas, voluptates, ducimus commodi libero voluptatibus veritatis quas doloribus soluta quam beatae ut nobis ad minus?
@@ -42,7 +48,7 @@
                 <button>Лайк</button>
                 <button>Дизлайк</button>
             </div>
-            <div>
+            <div class="ticket">
                 <h2>Title</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa excepturi vitae ipsum libero non. Voluptas, voluptates, ducimus commodi libero voluptatibus veritatis quas doloribus soluta quam beatae ut nobis ad minus?
@@ -50,7 +56,7 @@
                 <button>Лайк</button>
                 <button>Дизлайк</button>
             </div>
-            <div>
+            <div class="ticket">
                 <h2>Title</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa excepturi vitae ipsum libero non. Voluptas, voluptates, ducimus commodi libero voluptatibus veritatis quas doloribus soluta quam beatae ut nobis ad minus?
