@@ -32,8 +32,9 @@ li {
   border-radius: 20px;
   transition: 0.5s;
 }
-li: hover {
-
+li :hover {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 a {
   text-decoration: none;
@@ -78,6 +79,10 @@ a {
   border-radius: 20px;
   /* display: flex;
   flex-direction: column; */
+}
+
+.ticket :hover {
+  opacity: 0.85;
 }
 .ticket h2 {
   background-color: var(--green);
