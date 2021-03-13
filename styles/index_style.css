@@ -30,6 +30,10 @@ li {
   /* margin: 25px 48px; */
   margin: 10px 25px;
   border-radius: 20px;
+  transition: 0.5s;
+}
+li: hover {
+
 }
 a {
   text-decoration: none;
@@ -72,6 +76,8 @@ a {
   margin: 0px 50px;
   padding: 10px;
   border-radius: 20px;
+  /* display: flex;
+  flex-direction: column; */
 }
 .ticket h2 {
   background-color: var(--green);
@@ -80,5 +86,19 @@ a {
   border-radius: 20px;
 }
 .ticket button {
-  /* ... */
+  background: transparent;
+  border: none;
+}
+
+.ticket img {
+  width: 33px;
+  height: 29px;
+}
+.ticket span {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  font-size: 29px;
+}
+.dislike {
+  align-self: flex-end;
 }
