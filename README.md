@@ -1,2 +1,2 @@
-# SE-31-Forum-js-php-
-Курсовой проект форума с использованием html, css, js vanilla и php
+# Student's forum
+Forum for students where u can create tickets and discuss them with others.
