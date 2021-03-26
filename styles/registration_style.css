@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
+/* переменные */
+:root {
+  --black: #2e2d4d;
+  --white: #e4e3d3;
+  --green: #337357;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Comfortaa";
+}
+
+section {
+  max-width: 1172px;
+  height: 737px;
+  margin: 169px auto;
+  /* background */
+  background: #E4E3D3;
+  border-radius: 20px;
+}
+
+/* Введите логин */
+section h3 {
+  width: 439px;
+  height: 105px;
+
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* Поля ввода */
+.info_wrapper {
+  display: grid;
+grid-template-columns: repeat(2, min-content);
+}
+
+.info_wrapper input {
+  width: 550px;
+  height: 60px;
+  left: 664px;
+  top: 278px;
+
+  /* new black */
+  background: #2E2D4D;
+  border-radius: 20px;
+}
+
+/* Кнопка регистрации */
+section button {
+  max-width: 440px;
+  height: 107px;
+  /* норм тег использовать для центрирования */
+  margin-left: 470px;
+  /* Зарегестрироваться */
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 35px;
+  text-align: center;
+  padding: 0 10px;
+
+  /* color text */
+  color: var(--white);
+
+  /* background */
+  background: var(--black);
+  border-radius: 20px;
+}
+#caption {
+  text-align: center;
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 15px auto;
+
+}
