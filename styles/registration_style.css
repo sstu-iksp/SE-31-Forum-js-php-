@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
 
-/* переменные */
+/* РїРµСЂРµРјРµРЅРЅС‹Рµ */
 :root {
   --black: #2e2d4d;
   --white: #e4e3d3;
@@ -26,7 +26,7 @@ section {
   border-radius: 20px;
 }
 
-/* Введите логин */
+/* Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ */
 section h3 {
   width: 439px;
   height: 105px;
@@ -41,7 +41,7 @@ section h3 {
   color: #000000;
 }
 
-/* Поля ввода */
+/* РџРѕР»СЏ РІРІРѕРґР° */
 .info_wrapper {
   display: grid;
 grid-template-columns: repeat(2, min-content);
@@ -58,13 +58,13 @@ grid-template-columns: repeat(2, min-content);
   border-radius: 20px;
 }
 
-/* Кнопка регистрации */
+/* РљРЅРѕРїРєР° СЂРµРіРёСЃС‚СЂР°С†РёРё */
 section button {
   max-width: 440px;
   height: 107px;
-  /* норм тег использовать для центрирования */
+  /* РЅРѕСЂРј С‚РµРі РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ С†РµРЅС‚СЂРёСЂРѕРІР°РЅРёСЏ */
   margin-left: 470px;
-  /* Зарегестрироваться */
+  /* Р—Р°СЂРµРіРµСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ */
   font-family: Comfortaa;
   font-style: normal;
   font-weight: bold;
