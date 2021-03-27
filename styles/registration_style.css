@@ -41,10 +41,10 @@ section h3 {
   color: #000000;
 }
 
-/* Поля ввода */
+/* Сетка внутри секции */
 .info_wrapper {
   display: grid;
-grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(2, min-content);
 }
 
 .info_wrapper input {
@@ -56,6 +56,16 @@ grid-template-columns: repeat(2, min-content);
   /* new black */
   background: #2E2D4D;
   border-radius: 20px;
+}
+
+/* Поля ввода */
+input {
+  font-size: 32px;
+  font-weight: 700;
+  padding-left: 24px;
+
+  /* color text */
+  color: var(--white);
 }
 
 /* Кнопка регистрации */
@@ -86,5 +96,4 @@ section button {
   font-size: 32px;
   font-weight: 700;
   margin: 15px auto;
-
 }
