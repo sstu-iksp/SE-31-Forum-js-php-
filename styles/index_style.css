@@ -5,6 +5,7 @@
   --black: #2e2d4d;
   --white: #e4e3d3;
   --green: #337357;
+  --green_light: #5FAA89;
 }
 
 body {
@@ -15,10 +16,22 @@ body {
 /* Вверхная навигационная панель */
 .header {
   display: flex;
+  
   background-color: var(--green);
   border-radius: 20px;
   margin: 21px 141px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+.logo_wrapper {
+  width: 174px;
+  height: 98px;
+}
+.logo_wrapper h1 {
+  font-weight: 700;
+  color: var(--black);
+}
+.nav_wrapper {
+  margin-left: 322px;
 }
 ul {
   list-style-type: none;
@@ -30,11 +43,11 @@ li {
   /* margin: 25px 48px; */
   margin: 10px 25px;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
-li :hover {
-  opacity: 0.6;
-  transform: scale(1.1);
+li:hover {
+  background-color: var(--green_light);
+  transform: scale(1.05);
 }
 a {
   text-decoration: none;
