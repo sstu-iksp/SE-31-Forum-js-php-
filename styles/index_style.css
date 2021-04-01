@@ -5,6 +5,7 @@
   --black: #2e2d4d;
   --white: #e4e3d3;
   --green: #337357;
+  --light_green: #5FAA89;
 }
 
 body {
@@ -18,17 +19,32 @@ body {
 }
 
 /* Вверхная навигационная панель */
+
 .header {
   display: flex;
   background-color: var(--green);
   border-radius: 20px;
   margin: 21px auto;
   max-width: 1157px;
-  justify-content: space-around;
+  height: 90px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
+.header_logo h1 {
+  height: 98px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  max-width: 174px;
+  color: var(--black);
 }
 ul {
   list-style-type: none;
   display: flex;
+  margin-top: 15px;
+  margin-left: 170px;
 }
 li {
   background-color: var(--white);
@@ -37,10 +53,11 @@ li {
   margin: 10px 25px;
   border-radius: 20px;
   transition: 0.5s;
+  max-height: 40px;
 }
-li:hover, a:hover {
-  opacity: 0.8;
-  transform: scale(1.1);
+li:hover {
+  background-color: var(--light_green);
+  transform: scale(1.05);
 }
 a {
   text-decoration: none;
@@ -57,6 +74,9 @@ a {
   display: flex;
   justify-content: space-around;
 }
+#search_input, #select {
+  padding-left: 13px;
+}
 #search_input,
 #select,
 #ticket_btn {
@@ -66,10 +86,15 @@ a {
   border-radius: 20px;
   background-color: var(--white);
   color: var(--black);
+  transition: 0.15s;
 }
 #ticket_btn,
 #select {
   cursor: pointer;
+  outline: none;
+}
+#ticket_btn:hover, #select:hover, #search_input:hover {
+  background-color: var(--light_green);
 }
 
 /* Секция тикетов */
@@ -86,6 +111,9 @@ a {
   /* display: flex;
   flex-direction: column; */
   transition: 0.3s;
+}
+.ticket p {
+  cursor: default;
 }
 .ticket:hover {
   box-shadow: 0 0 15px var(--white);
