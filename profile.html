@@ -4,64 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/profile_style.css">
     <title>Profile</title>
 </head>
 <body>
     <!-- Верхняя панель -->
     <header class="header">
-        <div class="logo_wrapper">
-            <h1>Здесь Будет Лого</h1>
-        </div>
-        <div class="nav_wrapper">
-            <nav>
-                <ul>
-                    <li><a href="profile.html">Личный кабинет</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">О нас</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Домой</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
-            <div>
+            <div class="top_field">
                 <!-- Аватарка -->
                 <img src="images/default-user-icon.jpg" alt="smth-went-wrong">
-            </div>
-            <div>
                 <!-- Имя пользователя -->
                 <h2> userName</h2>
             </div> 
-            <div>
-                <!-- Репутация пользователя -->
-                <span>
+            <!-- Репутация пользователя -->
+            <div class="repSection">
+                <img src="images/like.png" alt="Reputation" id="repImg">
+                <span id="repText">
                     1
                 </span>
             </div>
-            <div>
+            <div class="info_wrapper">
                 <!-- Информация о пользователе -->
                 <p>
                     Имя:
                 </p>
-                <span>
+                <span id="userName">
                     Name Name
                 </span>
                 <p>
                     Группа:
                 </p>
-                <span>
+                <span id="userGroup">
                     group-##
                 </span>
                 <p>
                     Telegram:
                 </p>
-                <span>
+                <span id="userTelegram">
                     @user
                 </span>
                 <p>
                     Почта:
                 </p>
-                <span>
+                <span id="userMail">
                     usermail@mail.com
                 </span>
             </div>
