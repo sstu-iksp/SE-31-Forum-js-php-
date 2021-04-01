@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
+/* переменные */
+:root {
+  --black: #2e2d4d;
+  --white: #e4e3d3;
+  --green: #337357;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Comfortaa";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Вверхная навигационная панель */
+.header {
+    display: flex;
+    background-color: var(--green);
+    border-radius: 20px;
+    margin: 21px auto;
+    max-width: 1157px;
+    justify-content: space-around;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+  li {
+    background-color: var(--white);
+    padding: 10px;
+    /* margin: 25px 48px; */
+    margin: 10px 25px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  li:hover, a:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: "Comfortaa";
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    padding: 17px 20px;
+  }
+  
+  /* Навигация в тикетах */
+  .search {
+    display: flex;
+    justify-content: space-around;
+  }
+  #search_input,
+  #select,
+  #ticket_btn {
+    font-family: "Comfortaa";
+    height: 38px;
+    width: 280px;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--black);
+  }
+  #ticket_btn,
+  #select {
+    cursor: pointer;
+  }
+
+  /* main section */
+  section {
+      max-width: 1150px;
+      height: 763px;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      margin: 20px auto;
+      border-radius: 20px;
+  }
+  .top_field {
+      display: flex;
+      flex-direction: row;
+  }
+  .top_field h2 {
+      font-weight: 700;
+      background-color: var(--black);
+      color: var(--white);
+      font-size: 36px;
+      padding: 10px 35px;
+      margin-left: 210px;
+      margin-top: 37px;
+      height: 72px;
+      max-width: 511px;
+      border-radius: 20px;
+      text-align: center;
+  }
+  .top_field img {
+      max-height: 260px;
+      max-width: 260px;
+      display: block;
+      border-radius: 20px;
+      margin-left: 31px;
+      margin-top: 37px;
+  }
+/* rep section */
+.repSection {
+    display: flex;
+    flex-direction: row;
+    margin-left: 31px;
+    margin-top: 10px;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+.repSection img {
+    width: 45px;
+    height: 45px;
+}
+.repSection span {
+    color: var(--black);
+    font-size: 36px;
+    font-weight: 700;  
+}
+.repSection:hover {
+    filter: contrast(150%);
+    opacity: 1;
+    
+}
+  /* Info section */
+.info_wrapper {
+    max-width: 435px;
+    height: 360px;
+    background: var(--green);
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 31px;
+    border-radius: 20px;
+  }
+.info_wrapper p, .info_wrapper span {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 14px;
+    margin-top: 10px;
+}
