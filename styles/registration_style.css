@@ -10,17 +10,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa";
 }
 
 body {
   background-color: var(--black);
-  font-family: "Comfortaa";
 }
 
 section {
   max-width: 1172px;
   height: 737px;
-  margin: 169px auto;
+  margin: 99px auto; /* 169px */
+  
   /* background */
   background: var(--white);
   border-radius: 20px;
@@ -30,6 +31,7 @@ section {
 section h3 {
   width: 439px;
   height: 105px;
+  padding-left: 91px;
 
   font-family: Comfortaa;
   font-style: normal;
@@ -45,13 +47,12 @@ section h3 {
 .info_wrapper {
   display: grid;
   grid-template-columns: repeat(2, min-content);
+  padding-top: 109px;
 }
 
 .info_wrapper input {
   width: 550px;
   height: 60px;
-  left: 664px;
-  top: 278px;
 
   /* new black */
   background: var(--black);
@@ -72,16 +73,17 @@ input {
 section button {
   max-width: 440px;
   height: 107px;
-  /* норм тег использовать для центрирования */
-  margin-left: 470px;
-  /* Зарегестрироваться */
-  font-family: Comfortaa;
+  /* TODO использовать другой тег для центрирования */
+  margin-left: 366px;
+  margin-top: 85px;
+
+  /* Зарегистрироваться */
   font-style: normal;
   font-weight: bold;
   font-size: 31px;
   line-height: 35px;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 31px;
 
   /* color text */
   color: var(--white);
@@ -95,5 +97,5 @@ section button {
   color: var(--black);
   font-size: 32px;
   font-weight: 700;
-  margin: 15px auto;
+  /* margin: 15px auto; */
 }
