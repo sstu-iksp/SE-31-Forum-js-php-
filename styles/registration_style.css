@@ -22,7 +22,7 @@ section {
   height: 737px;
   margin: 169px auto;
   /* background */
-  background: #E4E3D3;
+  background: var(--white);
   border-radius: 20px;
 }
 
@@ -54,7 +54,7 @@ section h3 {
   top: 278px;
 
   /* new black */
-  background: #2E2D4D;
+  background: var(--black);
   border-radius: 20px;
 }
 
