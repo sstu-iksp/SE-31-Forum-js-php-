@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
+/* переменные */
+:root {
+  --black: #2e2d4d;
+  --white: #e4e3d3;
+  --green: #337357;
+  --light_green: #5FAA89;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa";
+}
+
+body {
+  background-color: var(--black);
+}
+
+section {
+  max-width: 1172px;
+  height: 737px;
+  margin: 99px auto; /* 169px */
+  
+  /* background */
+  background: var(--white);
+  border-radius: 20px;
+}
+
+/* Введите логин */
+section h3 {
+  width: 439px;
+  height: 105px;
+  padding-left: 91px;
+
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  cursor: default;
+  color: var(--black);
+}
+
+/* Сетка внутри секции */
+.info_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  padding-top: 109px;
+}
+
+.info_wrapper input {
+  width: 550px;
+  height: 60px;
+
+  /* new black */
+  background: var(--black);
+  border-radius: 20px;
+}
+
+/* Поля ввода */
+input {
+  font-size: 32px;
+  font-weight: 700;
+  padding-left: 24px;
+
+  /* color text */
+  color: var(--white);
+}
+
+/* Кнопка регистрации */
+section button {
+  max-width: 440px;
+  height: 107px;
+  /* TODO использовать другой тег для центрирования */
+  margin-left: 366px;
+  margin-top: 85px;
+
+  /* Зарегистрироваться */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 35px;
+  text-align: center;
+  padding: 0 31px;
+  cursor: pointer;
+  /* color text */
+  color: var(--white);
+
+  /* background */
+  background: var(--black);
+  border-radius: 20px;
+  transition: 0.15s;
+  border: none;
+}
+section button:hover {
+  background-color: var(--light_green);
+  color: var(--black);
+}
+#caption {
+  text-align: center;
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+  cursor: default;
+  padding-top: 15px;
+  /* margin: 15px auto; */
+}
