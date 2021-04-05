@@ -69,6 +69,10 @@ input {
   /* color text */
   color: var(--white);
 }
+input :active, :hover, :focus{
+  outline: 0;
+  outline-offset: 0;
+}
 
 /* Кнопка Войти */
 section button {
