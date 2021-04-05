@@ -5,6 +5,7 @@
   --black: #2e2d4d;
   --white: #e4e3d3;
   --green: #337357;
+  --light_green: #5FAA89;
 }
 * {
   margin: 0;
@@ -39,8 +40,8 @@ section h3 {
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-
-  color: #000000;
+  cursor: default;
+  color: var(--black);
 }
 
 /* Сетка внутри секции */
@@ -84,18 +85,26 @@ section button {
   line-height: 35px;
   text-align: center;
   padding: 0 31px;
-
+  cursor: pointer;
   /* color text */
   color: var(--white);
 
   /* background */
   background: var(--black);
   border-radius: 20px;
+  transition: 0.15s;
+  border: none;
+}
+section button:hover {
+  background-color: var(--light_green);
+  color: var(--black);
 }
 #caption {
   text-align: center;
   color: var(--black);
   font-size: 32px;
   font-weight: 700;
+  cursor: default;
+  padding-top: 15px;
   /* margin: 15px auto; */
 }
