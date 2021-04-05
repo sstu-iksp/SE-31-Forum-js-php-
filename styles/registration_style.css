@@ -20,7 +20,7 @@ body {
 
 section {
   max-width: 1172px;
-  height: 737px;
+  height: 687px;
   margin: 99px auto; /* 169px */
   
   /* background */
@@ -30,15 +30,14 @@ section {
 
 /* Введите логин */
 section h3 {
-  width: 439px;
+  width: 499px;
   height: 105px;
   padding-left: 91px;
 
-  font-family: Comfortaa;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 57px;
   text-align: center;
   cursor: default;
   color: var(--black);
@@ -48,7 +47,7 @@ section h3 {
 .info_wrapper {
   display: grid;
   grid-template-columns: repeat(2, min-content);
-  padding-top: 109px;
+  padding-top: 79px;
 }
 
 .info_wrapper input {
@@ -68,6 +67,10 @@ input {
 
   /* color text */
   color: var(--white);
+}
+input :active, :hover, :focus{
+  outline: 0;
+  outline-offset: 0;
 }
 
 /* Кнопка регистрации */
