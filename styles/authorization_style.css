@@ -20,7 +20,7 @@ body {
 
 section {
   max-width: 1012px;
-  height: 705px;
+  height: 555px;
   margin: 79px auto; /* 169px */
   
   /* background */
@@ -32,9 +32,8 @@ section {
 section h3 {
   width: 439px;
   height: 105px;
-  padding-left: 91px;
+  padding-left: 1px;
 
-  font-family: Comfortaa;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -48,7 +47,7 @@ section h3 {
 .info_wrapper {
   display: grid;
   grid-template-columns: repeat(2, min-content);
-  padding-top: 109px;
+  padding-top: 95px;
 }
 
 .info_wrapper input {
@@ -82,7 +81,7 @@ section button {
   margin-left: 366px;
   margin-top: 85px;
 
-  /* Зарегистрироваться */
+  /* Войти */
   font-style: normal;
   font-weight: bold;
   font-size: 31px;
