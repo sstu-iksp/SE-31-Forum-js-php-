@@ -19,9 +19,9 @@ body {
 }
 
 section {
-  max-width: 1172px;
-  height: 737px;
-  margin: 99px auto; /* 169px */
+  max-width: 1012px;
+  height: 705px;
+  margin: 79px auto; /* 169px */
   
   /* background */
   background: var(--white);
@@ -70,9 +70,9 @@ input {
   color: var(--white);
 }
 
-/* Кнопка регистрации */
+/* Кнопка Войти */
 section button {
-  max-width: 440px;
+  max-width: 315px;
   height: 107px;
   /* TODO использовать другой тег для центрирования */
   margin-left: 366px;
