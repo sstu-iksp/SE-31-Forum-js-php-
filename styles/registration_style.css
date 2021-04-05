@@ -20,7 +20,7 @@ body {
 
 section {
   max-width: 1172px;
-  height: 737px;
+  height: 687px;
   margin: 99px auto; /* 169px */
   
   /* background */
@@ -47,7 +47,7 @@ section h3 {
 .info_wrapper {
   display: grid;
   grid-template-columns: repeat(2, min-content);
-  padding-top: 109px;
+  padding-top: 79px;
 }
 
 .info_wrapper input {
