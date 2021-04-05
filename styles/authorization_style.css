@@ -30,14 +30,14 @@ section {
 
 /* Введите логин */
 section h3 {
-  width: 439px;
+  width: 200px;
   height: 105px;
   padding-left: 1px;
 
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 57px;
   text-align: center;
   cursor: default;
   color: var(--black);
