@@ -15,43 +15,26 @@ public class Post {
         this.authorId = authorId;
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) { this.id = id; }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() { return title; }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public void setTitle(String title) { this.title = title; }
 
-    public String getText() {
-        return text;
-    }
+    public String getText() { return text; }
 
-    public void setText(String text) {
-        this.text = text;
-    }
+    public void setText(String text) { this.text = text; }
 
-    public Long getSubjectId() {
-        return subjectId;
-    }
+    public Long getSubjectId() { return subjectId; }
 
-    public void setSubjectId(Long subjectId) {
-        this.subjectId = subjectId;
-    }
+    public void setSubjectId(Long subjectId) { this.subjectId = subjectId; }
 
-    public Long getAuthorId() {
-        return authorId;
-    }
+    public Long getAuthorId() { return authorId; }
 
     public void setAuthorId(Long authorId) {
         this.authorId = authorId;
     }
+
 }
