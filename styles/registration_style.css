@@ -5,7 +5,7 @@
   --black: #2e2d4d;
   --white: #e4e3d3;
   --green: #337357;
-  --light_green: #5FAA89;
+  --light_green: #5faa89;
 }
 * {
   margin: 0;
@@ -22,7 +22,7 @@ section {
   max-width: 1172px;
   height: 687px;
   margin: 99px auto; /* 169px */
-  
+
   /* background */
   background: var(--white);
   border-radius: 20px;
@@ -68,7 +68,9 @@ input {
   /* color text */
   color: var(--white);
 }
-input :active, :hover, :focus{
+input :active,
+:hover,
+:focus {
   outline: 0;
   outline-offset: 0;
 }
