@@ -5,7 +5,7 @@
   --black: #2e2d4d;
   --white: #e4e3d3;
   --green: #337357;
-  --light_green: #5FAA89;
+  --light_green: #5faa89;
 }
 
 body {
@@ -74,7 +74,8 @@ a {
   display: flex;
   justify-content: space-around;
 }
-#search_input, #select {
+#search_input,
+#select {
   padding-left: 13px;
 }
 #search_input,
@@ -93,7 +94,9 @@ a {
   cursor: pointer;
   outline: none;
 }
-#ticket_btn:hover, #select:hover, #search_input:hover {
+#ticket_btn:hover,
+#select:hover,
+#search_input:hover {
   background-color: var(--light_green);
 }
 
@@ -133,7 +136,8 @@ a {
   border: none;
   opacity: 0.75;
 }
-.ticket button:hover, .ticket span:hover {
+.ticket button:hover,
+.ticket span:hover {
   opacity: 1;
 }
 
