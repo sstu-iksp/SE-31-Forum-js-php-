@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index_style.css" />
+    <script defer src="source_js/popup.js"></script>
     <title>Главная страница</title>
   </head>
   <body>
@@ -36,14 +37,14 @@
         </select>
       </div>
       <div>
-        <button type="button" id="ticket_btn">Добавить ticket</button>
+        <button type="button" id="ticket_btn" data-modal-target="#modal">Добавить ticket</button>
       </div>
     </section>
     <!-- MODAL TICKET -->
-    <div class="modal_addTicket">
+    <div class="modal_addTicket" id="modal">
       <div class="modal_addTicket-header">
           <h3 class="modal-h3">Добавить тикет</h3>
-        <button class="modal-exit">&times;</button>
+        <button class="modal-exit" data-close-btn>&times;</button>
       </div>
       <div class="modal_addTicket-body">
         <form action="#">
@@ -56,7 +57,7 @@
           </form>
       </div>
     </div>
-    <div class="modal_overlay"></div>
+    <div id="modal_overlay"></div>
     <!-- Основное наполнение -->
     <main>
       <section class="ticket_wrapper">
