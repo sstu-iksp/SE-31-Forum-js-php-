@@ -62,7 +62,7 @@ body {
 
     background-color: var(--white);
     /* color text */
-    color: var(--black);
+    color: black;
 }
 .ticket_comment-header {
     border-bottom: 1px solid black;
