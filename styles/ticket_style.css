@@ -52,10 +52,51 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 2px solid black
+    border: 2px solid black;
+
+    /* color text */
+    color: var(--black);
 }
 .ticket_comment-header {
     border-bottom: 1px solid black;
     display: flex;
     gap: 10px;
+}
+
+.ticket_header button {
+  
+  /* Назад */
+  font-style: normal;
+  text-align: center;
+
+  cursor: pointer;
+  /* color text */
+  color: var(--white);
+
+}
+
+.ticket_footer button {
+    max-width: 220px;
+    height: 37px;
+    
+    /* Отправить */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0 31px;
+    cursor: pointer;
+    /* color text */
+    color: var(--white);
+  
+    /* background */
+    background: var(--black);
+    border-radius: 20px;
+    transition: 0.15s;
+    border: none;
+}
+.ticket_footer button:hover {
+    background-color: var(--light_green);
+    color: var(--black);
 }
