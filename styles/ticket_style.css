@@ -1,5 +1,22 @@
-.ticket {
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
 
+/* переменные */
+:root {
+    --black: #2e2d4d;
+    --white: #e4e3d3;
+    --green: #337357;
+    --light_green: #5FAA89;
+  }
+* {
+    font-family: "Comfortaa";
+}
+
+body {
+    background-color: var(--black);
+}
+
+.ticket {
+    background-color: var(--white);
 }
 .ticket_header {
     display: flex;
