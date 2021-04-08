@@ -1,0 +1,44 @@
+.ticket {
+
+}
+.ticket_header {
+    display: flex;
+    justify-content: space-between;
+}
+.ticket_body-head {
+    display: flex;
+    gap: 20px;
+}
+.ticket_body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ticket_footer {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ticket_footer-addComment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+}
+.ticket_footer-Comments {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ticket_comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black
+}
+.ticket_comment-header {
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 10px;
+}
