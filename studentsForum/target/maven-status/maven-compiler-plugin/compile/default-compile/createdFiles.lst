@@ -1,0 +1,16 @@
+com\company\entity\InstituteEntity.class
+com\company\entity\CommentEntity.class
+com\company\repository\UserRepositoryImpl.class
+com\company\entity\SubjectEntity.class
+com\company\entity\VoteEntity.class
+com\company\repository\UserRepository.class
+com\company\entity\CathedraEntity.class
+com\company\service\UserService.class
+com\company\repository\PostRepository.class
+com\company\entity\PostEntity.class
+com\company\entity\UserEntity.class
+com\company\controller\UserController.class
+com\company\entity\GroupEntity.class
+com\company\controller\HomePageController.class
+com\company\Application.class
+com\company\repository\PostRepositoryImpl.class

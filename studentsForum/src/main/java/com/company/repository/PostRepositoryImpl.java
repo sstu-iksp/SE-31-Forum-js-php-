@@ -1,12 +1,10 @@
 package com.company.repository;
 
-import com.company.model.Post;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class PostRepositoryImpl implements PostRepository {
-    private List<Post> posts = new ArrayList<>();
+    /*private List<Post> posts = new ArrayList<>();
 
     @Override
     public List<Post> getAllPosts() {
@@ -32,11 +30,11 @@ public class PostRepositoryImpl implements PostRepository {
     }
 
     @Override
-    public Post getPostById(Long id) {
+    public Post getPostById(int id) {
         for (Post post: posts) {
             if (post.getId().equals(id))
                 return post;
         }
         throw new IllegalArgumentException("Post with id " + id + " was not found");
-    }
+    }*/
 }
