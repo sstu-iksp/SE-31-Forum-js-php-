@@ -41,18 +41,27 @@ body {
     background-color: var(--black);
 }
 .ticket_footer-addComment {
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+
     gap: 10px;
     border: 1px solid black;
 
     background-color: var(--white);
 }
+textarea {
+    width: 700px;
+    resize: none;
+    overflow: auto;
+}
 .ticket_footer-Comments {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    
 }
 .ticket_comment {
     display: flex;
