@@ -25,6 +25,8 @@ body {
 .ticket_body-head {
     display: flex;
     gap: 20px;
+    min-height: 100px;
+    max-height: 200px;
 }
 .ticket_body {
     display: flex;
@@ -51,19 +53,22 @@ body {
 
     background-color: var(--white);
 }
-textarea {
+.field_txt_area {
     width: 700px;
     height: 70px;
     resize: none;
     overflow: auto;
+
     border-radius: 20px;
+
+    text-align: center;
 }
 .ticket_footer-Comments {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    margin: 0 auto;
 }
 .ticket_comment {
     display: flex;
