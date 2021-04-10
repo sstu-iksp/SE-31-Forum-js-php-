@@ -53,8 +53,10 @@ body {
 }
 textarea {
     width: 700px;
+    height: 70px;
     resize: none;
     overflow: auto;
+    border-radius: 20px;
 }
 .ticket_footer-Comments {
     max-width: 1200px;
@@ -70,6 +72,7 @@ textarea {
     border: 2px solid black;
 
     background-color: var(--white);
+    border-radius: 20px;
     /* color text */
     color: black;
 }
