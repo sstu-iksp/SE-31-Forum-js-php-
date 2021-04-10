@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/authorization_style.css" />
+    <link rel="stylesheet" href="static/styles/authorization_style.css" />
     <title>Вход</title>
   </head>
   <body>
     <main>
       <section>
-        <form method="" action="">
+        <form method="post" action="/login">
           <h2 id="caption">Введите данные для входа</h2>
           <div class="info_wrapper">
             <h3>Логин</h3>
-            <input type="text" />
+            <input type="text" name="login"/>
             <h3>Пароль</h3>
-            <input type="password" />
+            <input type="password" name="password"/>
+            <span></span>
+            <a href="/registration">Зарегестрироваться</a>
           </div>
           <button type="submit">Войти</button>
         </form>

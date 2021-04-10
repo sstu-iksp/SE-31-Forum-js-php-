@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/profile_style.css" />
+    <link rel="stylesheet" href="static/styles/profile_style.css" />
     <title>Profile</title>
   </head>
   <body>
@@ -12,12 +12,13 @@
     <header class="header">
       <nav>
         <div class="header_logo">
-          <a href="index"><h1>Здесь будет лого</h1></a>
+          <a href="/"><h1>Здесь будет лого</h1></a>
         </div>
         <ul>
-          <li><a href="profile">Личный кабинет</a></li>
+<!--          <li><a href="profile">Личный кабинет</a></li>-->
           <li><a href="#">FAQ</a></li>
           <li><a href="#">О нас</a></li>
+          <li><a href="/logout">Выйти</a></li>
         </ul>
       </nav>
     </header>
@@ -25,25 +26,25 @@
       <section>
         <div class="top_field">
           <!-- Аватарка -->
-          <img src="images/default-user-icon.jpg" alt="smth-went-wrong" />
+          <img src="static/images/default-user-icon.jpg" alt="smth-went-wrong" />
           <!-- Имя пользователя -->
-          <h2>userName</h2>
+          <h2 th:text="${user.login}"></h2>
         </div>
         <!-- Репутация пользователя -->
         <div class="repSection">
-          <img src="images/like.png" alt="Reputation" id="repImg" />
+          <img src="static/images/like.png" alt="Reputation" id="repImg" />
           <span id="repText"> 1 </span>
         </div>
         <div class="info_wrapper">
           <!-- Информация о пользователе -->
           <p>Имя:</p>
-          <span id="userName"> Name Name </span>
+          <span id="userName"> <span th:text="${user.firstName}"></span> <span th:text="${user.lastName}"></span> </span>
           <p>Группа:</p>
-          <span id="userGroup"> group-## </span>
+          <span id="userGroup"> <span th:text="${user.group}"></span> </span>
           <p>Telegram:</p>
-          <span id="userTelegram"> @user </span>
+          <span id="userTelegram"> @<span th:text="${user.telegram}"></span> </span>
           <p>Почта:</p>
-          <span id="userMail"> usermail@mail.com </span>
+          <span id="userMail" th:text="${user.email}"></span>
         </div>
       </section>
     </main>

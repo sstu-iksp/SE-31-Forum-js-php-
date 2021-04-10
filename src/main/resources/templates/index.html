@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/styles/index_style.css" />
+    <script defer src="static/source_js/popup.js"></script>
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <!-- Верхняя панель -->
+    <header class="header">
+      <nav>
+        <div class="header_logo">
+          <a href="/"><h1>Здесь будет лого</h1></a>
+        </div>
+        <ul>
+          <li>
+            <a href="/profile" th:if="${authenticated}">Личный кабинет</a>
+            <a href="/login" th:if="${!authenticated}">Войти</a>
+          </li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">О нас</a></li>
+          <li th:if="${authenticated}"><a href="/logout">Выйти</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--  навигация в тикетах -->
+    <section class="search">
+      <div>
+        <input type="text" placeholder="Поиск..." id="search_input" />
+      </div>
+      <div>
+        <select id="select">
+          <option>#subject</option>
+          <option>#subject</option>
+          <option>#subject</option>
+          <option>#subject</option>
+          <option>#subject</option>
+        </select>
+      </div>
+      <div>
+        <button type="button" id="ticket_btn" data-modal-target="#modal">Добавить ticket</button>
+      </div>
+    </section>
+    <!-- MODAL TICKET -->
+    <div class="modal_addTicket" id="modal">
+      <div class="modal_addTicket-header">
+          <h3 class="modal-h3">Добавить тикет</h3>
+        <button class="modal-exit" data-close-btn>&times;</button>
+      </div>
+      <div class="modal_addTicket-body">
+        <form action="post" method="post">
+            <input class="modal-input" type="text" placeholder="Заголовок" name="title" />
+            <fieldset class="modal-fieldset">
+              <legend class="modal-legend">Text</legend>
+              <textarea class="modal-textarea" name="text" maxlength="500" placeholder="Разместите здесь свой текст"></textarea>
+            </fieldset>
+            <button type="submit" class="modal_submitBtn">Добавить тикет</button>
+          </form>
+      </div>
+    </div>
+    <div id="modal_overlay"></div>
+    <!-- Основное наполнение -->
+    <main>
+      <section class="ticket_wrapper">
+        <div class="ticket" th:each="post : ${posts}">
+          <h2 th:text="${post.title}"></h2>
+          <p th:text="${post.text}"></p>
+          <button><img src="static/images/like.png" /></button>
+          <span id="like">1</span>
+          <button class="dislike"><img src="static/images/dislike.png" /></button>
+          <span class="dislike">1</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

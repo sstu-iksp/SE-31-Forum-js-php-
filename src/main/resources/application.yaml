@@ -1,0 +1,12 @@
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/students_forum
+    username: students_forum
+    password: password
+    driverClassName: org.postgresql.Driver
